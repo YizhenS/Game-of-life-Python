@@ -5,12 +5,12 @@ def pirntGrid(Grid):
 
     for x in range(row):
         for y in range(col):
-            print (lastG[x][y],end = ''),
+            print (Grid[x][y],end = ''),
         print("")
 
 
 
-def sum(Grid,x,y):
+def sumCell(Grid,x,y):
     row = len(Grid)
     col = len(Grid[0])
 
@@ -27,12 +27,40 @@ def sum(Grid,x,y):
     
     return sum
 
+def Generate(Grid):
+    row = len(Grid)
+    col = len(Grid[0])
+    temp = [[0 for i in range(col)] for j in range (row)]
+
+    for x in range(row):
+        for y in range(col):
+            sum = sumCell(Grid,x,y)
+           
+            #when itself is alive
+            if Grid[x][y] == 1:
+                # case when it die
+                if sum <= 1 or sum >= 4:
+                    temp[x][y] = 0
+                else:
+                    temp[x][y] = 1
+            #when itslef is died
+            else:
+                if sum == 3:
+                    temp[x][y] = 1
+                else:
+                    temp[x][y] = 0
+            
+            return temp
 
 
 
 
-lastG = [[0,1,0,0,0,0],[1,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0]]
-pirntGrid(lastG)
-print(lastG[0][3])
-print(sum(lastG,1,1))
+print("first")
+First = [[1,1,1,1,1,1],[1,1,1,1,1,1],[1,1,1,1,1,1],[1,1,1,1,1,1]]
+pirntGrid(First)
+print("second")
+second = Generate(First)
+pirntGrid(second)
+
+
 

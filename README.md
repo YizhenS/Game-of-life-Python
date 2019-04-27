@@ -17,10 +17,10 @@ cd Game-of-Life-python
 
 - Print the 2d array in console
 - Get summarization of how many cells alive around one cell
-
-## Features it needs (minimum requirement)
-
 - generate the next generation of array
+## Features it needs (minimum requirement)
+- Test case
+
 
 ## Features nice to have
 - Let the user define the length of the row and the col
