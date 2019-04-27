@@ -25,6 +25,7 @@ cd Game-of-Life-python
 ## Features nice to have
 - Let the user define the length of the row and the col
 - have different sets of the first generation status
+- seperate different functions in to different file
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
