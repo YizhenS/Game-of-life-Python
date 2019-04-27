@@ -29,6 +29,8 @@ def sum(Grid,x,y):
 
 
 
+
+
 lastG = [[0,1,0,0,0,0],[1,0,0,0,0,0],[0,0,0,0,0,0],[0,0,0,0,0,0]]
 pirntGrid(lastG)
 print(lastG[0][3])
