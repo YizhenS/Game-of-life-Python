@@ -9,6 +9,7 @@ git clone and cd into the folder
 ```bash
 git clone https://github.com/YizhenS/Game-of-life-Python
 cd Game-of-Life-python
+python3 main.py
 ```
 
 
